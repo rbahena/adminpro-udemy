@@ -12,15 +12,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { PagesModule } from './pages/pages.module';
+import {FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
+    RegisterComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, APP_ROUTES, PagesModule],
+  imports: [BrowserModule, AppRoutingModule, APP_ROUTES, FormsModule, PagesModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
