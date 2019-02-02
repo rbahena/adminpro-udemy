@@ -15,6 +15,7 @@ import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
 
 // Temporal
 
@@ -26,7 +27,8 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
         ProgressComponent,
         Graficas1Component,
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        AccoutSettingsComponent
     ],
     imports: [CommonModule, SharedModule, PAGES_ROUTES, FormsModule, ChartsModule],
     exports: [

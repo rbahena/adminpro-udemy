@@ -12,7 +12,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { PagesModule } from './pages/pages.module';
-import {FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { ServiceModule } from './services/service.module';
+import { CommonModule } from '@angular/common';
+
+// Servicios
+
 
 
 @NgModule({
@@ -21,7 +26,7 @@ import {FormsModule } from '@angular/forms';
     LoginComponent,
     RegisterComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, APP_ROUTES, FormsModule, PagesModule],
+  imports: [BrowserModule, AppRoutingModule, APP_ROUTES, FormsModule, PagesModule, ServiceModule, CommonModule],
   providers: [],
   bootstrap: [AppComponent]
 })
